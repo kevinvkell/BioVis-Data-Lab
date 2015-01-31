@@ -60,15 +60,3 @@ with open('zoo.names.txt') as names_file, open('zoo.data.txt') as data_file:
     with open("output.csv", "wb") as output_file:
         writer = csv.writer(output_file)
         writer.writerows(result)
-
-    for match in names_and_types:
-        print(match)
-
-    # for line in data:
-    #     print(line)
-
-    # for line in new_data:
-    #     print(line)
-
-    for line in result:
-        print(line)
